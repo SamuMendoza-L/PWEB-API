@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Ditto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Pokémon Info</h1>
+    <button id="change-pokemon">Cambiar Pokémon</button>
+  </header>
+
+  <main class="container">
+    <section class="image-section">
+      <img id="pokemon-image" src="" alt="Imagen de Ditto">
+    </section>
+
+    <section class="info-section">
+      <h2 id="pokemon-name"></h2>
+
+      <div class="categories">
+        <div class="category">
+          <h3>Tipos</h3>
+          <ul id="pokemon-types"></ul>
+        </div>
+
+        <div class="category">
+          <h3>Estadísticas Base</h3>
+          <ul id="pokemon-stats"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Datos obtenidos de <a href="https://pokeapi.co/" target="_blank">PokéAPI</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
