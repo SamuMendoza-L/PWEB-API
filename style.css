@@ -98,3 +98,48 @@ button#change-pokemon:hover {
 button#change-pokemon:active {
     transform: scale(0.98);
 }
+
+.search-container {
+  position: relative;
+  max-width: 300px;
+  margin: 1rem auto;
+}
+
+#search-pokemon {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+}
+
+.suggestions-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  z-index: 1000;
+}
+
+.suggestion-item {
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+.suggestion-item img {
+  width: 30px;
+  height: 30px;
+}
